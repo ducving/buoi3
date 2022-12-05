@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+    <input type="text" id="dauvao">
+    <select name="" id="dauvao1">
+    <option value="a">VNĐ</option>
+    <option value="b">USD</option>
+    </select> 
+    <select name="" id="dauvao2">
+    <option value="a">VNĐ</option>
+    <option value="b">USD</option>
+    </select> 
+    <button onclick="lamgido()">chuyển đổi</button>
+    <script>
+        function lamgido() {
+            let giatrivao = document.getElementById('dauvao').value;
+            let dauvao1 = document.getElementById('dauvao1').value;
+            let dauvao2 = document.getElementById('dauvao2').value;
+            if (dauvao1 == dauvao2) {
+             alert(giatrivao);   
+            }
+            if (dauvao1 == "a" && dauvao2 == "b") {
+                alert(giatrivao/24000);
+            }
+            if (dauvao1 == "b" && dauvao2 == "a") {
+                alert(giatrivao*24000);
+            }
+        }
+    </script>      
+    </body>
+</html>
